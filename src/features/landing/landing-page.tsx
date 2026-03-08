@@ -25,7 +25,7 @@ function Section({ children, className = '', id }: { children: React.ReactNode; 
 function CodeHighlightRequest() {
   return (
     <pre className="text-[12.5px] font-mono leading-[1.7] overflow-x-auto">
-      <span className="text-[#e06c75]">curl</span> <span className="text-text-secondary">-X</span> <span className="text-[#c678dd]">POST</span> <span className="text-[#98c379]">https://api.solpay.io/payments</span> <span className="text-text-tertiary">\</span>{'\n'}
+      <span className="text-[#e06c75]">curl</span> <span className="text-text-secondary">-X</span> <span className="text-[#c678dd]">POST</span> <span className="text-[#98c379]">https://api.payzen.tech/payments</span> <span className="text-text-tertiary">\</span>{'\n'}
       {'  '}<span className="text-text-secondary">-H</span> <span className="text-[#98c379]">"Authorization: Bearer sk_live_..."</span> <span className="text-text-tertiary">\</span>{'\n'}
       {'  '}<span className="text-text-secondary">-H</span> <span className="text-[#98c379]">"Content-Type: application/json"</span> <span className="text-text-tertiary">\</span>{'\n'}
       {'  '}<span className="text-text-secondary">-d</span> <span className="text-[#98c379]">{"'"}</span><span className="text-white/60">{'{'}</span>{'\n'}
@@ -45,7 +45,7 @@ function CodeHighlightResponse() {
       {'  '}<span className="text-[#e06c75]">"payment_address"</span><span className="text-white/40">:</span> <span className="text-[#98c379]">"9WzDXwBb..."</span><span className="text-white/40">,</span>{'\n'}
       {'  '}<span className="text-[#e06c75]">"amount_sol"</span><span className="text-white/40">:</span> <span className="text-[#d19a66]">2.5</span><span className="text-white/40">,</span>{'\n'}
       {'  '}<span className="text-[#e06c75]">"status"</span><span className="text-white/40">:</span> <span className="text-[#98c379]">"pending"</span><span className="text-white/40">,</span>{'\n'}
-      {'  '}<span className="text-[#e06c75]">"checkout_url"</span><span className="text-white/40">:</span> <span className="text-[#98c379]">"https://solpay.io/pay/pay_7f3a9c..."</span>{'\n'}
+      {'  '}<span className="text-[#e06c75]">"checkout_url"</span><span className="text-white/40">:</span> <span className="text-[#98c379]">"https://payzen.tech/pay/pay_7f3a9c..."</span>{'\n'}
       <span className="text-white/60">{'}'}</span>
     </pre>
   );
@@ -69,7 +69,7 @@ export function LandingPage() {
           <div className="flex items-center gap-1">
             <Link to="/" className="flex items-center gap-2 mr-4">
               <Zap className="w-[18px] h-[18px] text-white" />
-              <span className="text-[14px] font-semibold text-text-primary tracking-[-0.02em]">SolPay</span>
+              <span className="text-[14px] font-semibold text-text-primary tracking-[-0.02em]">Pazen</span>
             </Link>
             <a href="#features" className="px-3 py-1.5 text-[13px] text-text-tertiary hover:text-text-primary transition-colors hidden sm:block">Features</a>
             <a href="#developers" className="px-3 py-1.5 text-[13px] text-text-tertiary hover:text-text-primary transition-colors hidden sm:block">Developers</a>
@@ -273,7 +273,7 @@ export function LandingPage() {
             <div className="px-6 sm:px-8 py-8 transition-colors duration-300 hover:bg-white/[0.015] sm:border-r border-white/[0.06]">
               <div className="mb-5 h-[100px] rounded-lg bg-white/[0.02] border border-white/[0.06] flex items-center justify-center overflow-hidden px-5">
                 <div className="font-mono text-[10px] leading-[1.6] w-full">
-                  <span className="text-[#c678dd]">const</span> <span className="text-[#e06c75]">pay</span> <span className="text-white/40">=</span> <span className="text-[#c678dd]">await</span> <span className="text-[#61afef]">solpay</span><span className="text-white/40">.</span><span className="text-[#61afef]">create</span><span className="text-white/40">{'({'}</span>{'\n'}
+                  <span className="text-[#c678dd]">const</span> <span className="text-[#e06c75]">pay</span> <span className="text-white/40">=</span> <span className="text-[#c678dd]">await</span> <span className="text-[#61afef]">pazen</span><span className="text-white/40">.</span><span className="text-[#61afef]">create</span><span className="text-white/40">{'({'}</span>{'\n'}
                   {'  '}<span className="text-[#e06c75]">amount</span><span className="text-white/40">:</span> <span className="text-[#d19a66]">2.5</span><span className="text-white/40">,</span>{'\n'}
                   {'  '}<span className="text-[#e06c75]">currency</span><span className="text-white/40">:</span> <span className="text-[#98c379]">"SOL"</span>{'\n'}
                   <span className="text-white/40">{'});'}</span>
@@ -533,7 +533,7 @@ export function LandingPage() {
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
               <Zap className="w-3.5 h-3.5 text-text-tertiary" />
-              <span className="text-[12px] text-text-tertiary">SolPay</span>
+              <span className="text-[12px] text-text-tertiary">Pazen</span>
             </div>
             <span className="text-[12px] text-text-tertiary/50">Beta</span>
           </div>

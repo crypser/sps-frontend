@@ -47,7 +47,7 @@ export function CheckoutPage() {
         <div className="w-7 h-7 rounded-lg bg-white/10 flex items-center justify-center">
           <Zap className="w-4 h-4 text-white" />
         </div>
-        <span className="text-[15px] font-bold text-text-primary tracking-[-0.03em]">SolPay</span>
+        <span className="text-[15px] font-bold text-text-primary tracking-[-0.03em]">Pazen</span>
       </div>
 
       {/* Amount */}

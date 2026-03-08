@@ -28,7 +28,7 @@ const sections: { title: string; endpoints: Endpoint[] }[] = [
         auth: 'none',
         request: { wallet: '7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU' },
         response: {
-          message: 'Sign this message to authenticate with SPS.\n\nNonce: 0c974c1c...',
+          message: 'Sign this message to authenticate with Pazen.\n\nNonce: 0c974c1c...',
           nonce: '0c974c1c9e76fc056941133188f9894a6bf4e4c1b7d719e0a1b8cf339eb1ad15',
         },
       },
@@ -39,7 +39,7 @@ const sections: { title: string; endpoints: Endpoint[] }[] = [
         auth: 'none',
         request: {
           wallet: '7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU',
-          message: 'Sign this message to authenticate with SPS.\n\nNonce: 0c974c1c...',
+          message: 'Sign this message to authenticate with Pazen.\n\nNonce: 0c974c1c...',
           signature: '5TxKz...base58_encoded_signature',
         },
         response: { token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...' },
@@ -289,7 +289,7 @@ export function DocsPage() {
       <div>
         <h1 className="text-2xl font-bold text-text-primary tracking-[-0.03em]">API Documentation</h1>
         <p className="mt-1 text-sm text-text-secondary">
-          Integrate SolPay into your application using the REST API
+          Integrate Pazen into your application using the REST API
         </p>
       </div>
 

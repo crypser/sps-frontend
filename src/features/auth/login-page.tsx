@@ -26,7 +26,7 @@ export function LoginPage() {
       <nav className="border-b border-white/[0.06] px-6 h-14 flex items-center">
         <Link to="/" className="flex items-center gap-2">
           <Zap className="w-[18px] h-[18px] text-white" />
-          <span className="text-[14px] font-semibold text-text-primary tracking-[-0.02em]">SolPay</span>
+          <span className="text-[14px] font-semibold text-text-primary tracking-[-0.02em]">Pazen</span>
         </Link>
       </nav>
 
