@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { Zap, ArrowRight, Shield, Wallet, Globe, Terminal, ChevronRight } from 'lucide-react';
+import { Zap, ArrowRight, Shield, Wallet, ChevronRight } from 'lucide-react';
 import { motion, useInView } from 'motion/react';
 import { useRef, useEffect } from 'react';
 import { useAuth } from '../auth/auth-context';
