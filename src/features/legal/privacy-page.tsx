@@ -8,7 +8,7 @@ export function PrivacyPage() {
       <nav className="border-b border-white/[0.06] px-6 h-14 flex items-center">
         <Link to="/" className="flex items-center gap-2">
           <Zap className="w-[18px] h-[18px] text-white" />
-          <span className="text-[14px] font-semibold text-text-primary tracking-[-0.02em]">Pazen</span>
+          <span className="text-[14px] font-semibold text-text-primary tracking-[-0.02em]">PayZen</span>
         </Link>
       </nav>
 
@@ -34,7 +34,7 @@ export function PrivacyPage() {
                 title: '1. Beta Notice',
                 content: (
                   <p>
-                    Pazen is in <strong className="text-text-primary">beta</strong>. Our data handling practices may evolve as
+                    PayZen is in <strong className="text-text-primary">beta</strong>. Our data handling practices may evolve as
                     the platform develops. We recommend reviewing this policy periodically for updates.
                   </p>
                 ),
@@ -43,7 +43,7 @@ export function PrivacyPage() {
                 title: '2. Information We Collect',
                 content: (
                   <>
-                    <p>Pazen collects minimal information necessary to operate the service:</p>
+                    <p>PayZen collects minimal information necessary to operate the service:</p>
                     <ul className="list-disc pl-6 mt-3 space-y-1.5">
                       <li><strong className="text-text-primary">Wallet address</strong> — your public Solana wallet address, used for authentication and identification</li>
                       <li><strong className="text-text-primary">Transaction data</strong> — payment amounts, addresses, timestamps, and transaction hashes generated through platform use</li>
@@ -74,9 +74,9 @@ export function PrivacyPage() {
                 title: '4. Blockchain Data',
                 content: (
                   <p>
-                    All transactions processed through Pazen are recorded on the Solana blockchain, which is a public,
+                    All transactions processed through PayZen are recorded on the Solana blockchain, which is a public,
                     immutable ledger. Transaction data on the blockchain is permanently visible to anyone and cannot be deleted
-                    or modified by Pazen or any other party.
+                    or modified by PayZen or any other party.
                   </p>
                 ),
               },
@@ -112,7 +112,7 @@ export function PrivacyPage() {
                 title: '8. Restricted Jurisdictions',
                 content: (
                   <p>
-                    This service is not intended for users in the United States or the European Union. If you access Pazen
+                    This service is not intended for users in the United States or the European Union. If you access PayZen
                     from a restricted jurisdiction, you do so at your own risk and are responsible for compliance with local
                     laws.
                   </p>
@@ -122,7 +122,7 @@ export function PrivacyPage() {
                 title: '9. Changes to This Policy',
                 content: (
                   <p>
-                    We may update this Privacy Policy at any time. Continued use of Pazen after changes constitutes acceptance
+                    We may update this Privacy Policy at any time. Continued use of PayZen after changes constitutes acceptance
                     of the revised policy.
                   </p>
                 ),
@@ -138,7 +138,7 @@ export function PrivacyPage() {
           {/* Footer */}
           <div className="px-6 sm:px-10 py-6 border-t border-white/[0.06] bg-white/[0.01]">
             <p className="text-text-tertiary text-[11px]">
-              By connecting your wallet and using Pazen, you acknowledge that you have read and understood this Privacy
+              By connecting your wallet and using PayZen, you acknowledge that you have read and understood this Privacy
               Policy.
             </p>
           </div>

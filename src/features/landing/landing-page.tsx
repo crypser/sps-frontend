@@ -69,7 +69,7 @@ export function LandingPage() {
           <div className="flex items-center gap-1">
             <Link to="/" className="flex items-center gap-2 mr-4">
               <Zap className="w-[18px] h-[18px] text-white" />
-              <span className="text-[14px] font-semibold text-text-primary tracking-[-0.02em]">Pazen</span>
+              <span className="text-[14px] font-semibold text-text-primary tracking-[-0.02em]">PayZen</span>
             </Link>
             <a href="#features" className="px-3 py-1.5 text-[13px] text-text-tertiary hover:text-text-primary transition-colors hidden sm:block">Features</a>
             <a href="#developers" className="px-3 py-1.5 text-[13px] text-text-tertiary hover:text-text-primary transition-colors hidden sm:block">Developers</a>
@@ -273,7 +273,7 @@ export function LandingPage() {
             <div className="px-6 sm:px-8 py-8 transition-colors duration-300 hover:bg-white/[0.015] sm:border-r border-white/[0.06]">
               <div className="mb-5 h-[100px] rounded-lg bg-white/[0.02] border border-white/[0.06] flex items-center justify-center overflow-hidden px-5">
                 <div className="font-mono text-[10px] leading-[1.6] w-full">
-                  <span className="text-[#c678dd]">const</span> <span className="text-[#e06c75]">pay</span> <span className="text-white/40">=</span> <span className="text-[#c678dd]">await</span> <span className="text-[#61afef]">pazen</span><span className="text-white/40">.</span><span className="text-[#61afef]">create</span><span className="text-white/40">{'({'}</span>{'\n'}
+                  <span className="text-[#c678dd]">const</span> <span className="text-[#e06c75]">pay</span> <span className="text-white/40">=</span> <span className="text-[#c678dd]">await</span> <span className="text-[#61afef]">payzen</span><span className="text-white/40">.</span><span className="text-[#61afef]">create</span><span className="text-white/40">{'({'}</span>{'\n'}
                   {'  '}<span className="text-[#e06c75]">amount</span><span className="text-white/40">:</span> <span className="text-[#d19a66]">2.5</span><span className="text-white/40">,</span>{'\n'}
                   {'  '}<span className="text-[#e06c75]">currency</span><span className="text-white/40">:</span> <span className="text-[#98c379]">"SOL"</span>{'\n'}
                   <span className="text-white/40">{'});'}</span>
@@ -533,7 +533,7 @@ export function LandingPage() {
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
               <Zap className="w-3.5 h-3.5 text-text-tertiary" />
-              <span className="text-[12px] text-text-tertiary">Pazen</span>
+              <span className="text-[12px] text-text-tertiary">PayZen</span>
             </div>
             <span className="text-[12px] text-text-tertiary/50">Beta</span>
           </div>

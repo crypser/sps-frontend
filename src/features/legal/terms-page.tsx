@@ -8,7 +8,7 @@ export function TermsPage() {
       <nav className="border-b border-white/[0.06] px-6 h-14 flex items-center">
         <Link to="/" className="flex items-center gap-2">
           <Zap className="w-[18px] h-[18px] text-white" />
-          <span className="text-[14px] font-semibold text-text-primary tracking-[-0.02em]">Pazen</span>
+          <span className="text-[14px] font-semibold text-text-primary tracking-[-0.02em]">PayZen</span>
         </Link>
       </nav>
 
@@ -34,7 +34,7 @@ export function TermsPage() {
                 title: '1. Beta Disclaimer',
                 content: (
                   <p>
-                    Pazen is currently in <strong className="text-text-primary">beta</strong>. The platform is provided on an
+                    PayZen is currently in <strong className="text-text-primary">beta</strong>. The platform is provided on an
                     "as is" and "as available" basis. We make no warranties, expressed or implied, regarding the reliability,
                     availability, accuracy, or completeness of the service. Features may change, break, or be removed without
                     prior notice.
@@ -46,7 +46,7 @@ export function TermsPage() {
                 content: (
                   <>
                     <p>
-                      To the fullest extent permitted by applicable law, Pazen and its operators shall not be liable for any
+                      To the fullest extent permitted by applicable law, PayZen and its operators shall not be liable for any
                       direct, indirect, incidental, special, consequential, or punitive damages, including but not limited to:
                     </p>
                     <ul className="list-disc pl-6 mt-3 space-y-1.5">
@@ -58,7 +58,7 @@ export function TermsPage() {
                       <li>Damages resulting from blockchain network failures, delays, or congestion</li>
                     </ul>
                     <p className="mt-3">
-                      You acknowledge that you use Pazen entirely at your own risk. We are not responsible for any financial
+                      You acknowledge that you use PayZen entirely at your own risk. We are not responsible for any financial
                       losses incurred through the use of this platform.
                     </p>
                   </>
@@ -69,12 +69,12 @@ export function TermsPage() {
                 content: (
                   <>
                     <p>
-                      Pazen is <strong className="text-text-primary">not available</strong> to users located in, incorporated in,
+                      PayZen is <strong className="text-text-primary">not available</strong> to users located in, incorporated in,
                       or residents of the United States of America, the European Union, or any jurisdiction where the use of
                       cryptocurrency payment processing services is prohibited or restricted by law.
                     </p>
                     <p className="mt-3">
-                      By using Pazen, you represent and warrant that you are not subject to the laws of any restricted
+                      By using PayZen, you represent and warrant that you are not subject to the laws of any restricted
                       jurisdiction and that your use of the platform does not violate any applicable laws or regulations.
                     </p>
                   </>
@@ -90,7 +90,7 @@ export function TermsPage() {
                       before confirming any payment or withdrawal.
                     </p>
                     <p className="mt-3">
-                      Pazen does not custody your funds. Payments are processed through temporary escrow addresses and swept to
+                      PayZen does not custody your funds. Payments are processed through temporary escrow addresses and swept to
                       a treasury wallet. Withdrawals are sent directly to the destination address you provide. We cannot recover
                       funds sent to incorrect addresses.
                     </p>
@@ -101,7 +101,7 @@ export function TermsPage() {
                 title: '5. Platform Fees',
                 content: (
                   <p>
-                    Pazen charges a 1% platform fee on confirmed payments, deducted during the sweep process. Withdrawals
+                    PayZen charges a 1% platform fee on confirmed payments, deducted during the sweep process. Withdrawals
                     incur a flat network fee of 0.001 SOL. Fee structures may change at any time with or without notice.
                   </p>
                 ),
@@ -110,7 +110,7 @@ export function TermsPage() {
                 title: '6. Account Termination',
                 content: (
                   <p>
-                    We reserve the right to suspend or terminate access to Pazen at any time, for any reason, without prior
+                    We reserve the right to suspend or terminate access to PayZen at any time, for any reason, without prior
                     notice. Upon termination, you should withdraw any remaining balance promptly. We are not obligated to
                     maintain access to funds indefinitely after termination.
                   </p>
@@ -120,7 +120,7 @@ export function TermsPage() {
                 title: '7. Changes to Terms',
                 content: (
                   <p>
-                    We may update these Terms of Service at any time. Continued use of Pazen after changes constitutes
+                    We may update these Terms of Service at any time. Continued use of PayZen after changes constitutes
                     acceptance of the revised terms.
                   </p>
                 ),
@@ -136,7 +136,7 @@ export function TermsPage() {
           {/* Footer */}
           <div className="px-6 sm:px-10 py-6 border-t border-white/[0.06] bg-white/[0.01]">
             <p className="text-text-tertiary text-[11px]">
-              By connecting your wallet and using Pazen, you acknowledge that you have read, understood, and agree to
+              By connecting your wallet and using PayZen, you acknowledge that you have read, understood, and agree to
               be bound by these Terms of Service.
             </p>
           </div>
