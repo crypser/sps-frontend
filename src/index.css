@@ -1,0 +1,173 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@theme {
+  --font-sans: 'Outfit', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-surface: #0c0c11;
+  --color-surface-raised: #16161e;
+  --color-surface-sunken: #08080c;
+  --color-sidebar: #0a0a0f;
+  --color-sidebar-hover: #14141c;
+  --color-sidebar-active: #1c1c26;
+  --color-accent: #ffffff;
+  --color-accent-hover: #d4d4d4;
+  --color-accent-soft: rgba(255, 255, 255, 0.06);
+  --color-text-primary: #ededf0;
+  --color-text-secondary: #8b8b96;
+  --color-text-tertiary: #5b5b66;
+  --color-border: #252530;
+  --color-border-subtle: #1e1e28;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+}
+
+/* Wallet adapter overrides */
+.wallet-adapter-button {
+  font-family: var(--font-sans) !important;
+  font-weight: 600 !important;
+  border-radius: 10px !important;
+  height: 48px !important;
+  background: var(--color-accent) !important;
+  color: #0c0c11 !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.wallet-adapter-button:hover {
+  background: var(--color-accent-hover) !important;
+  transform: translateY(-1px);
+}
+
+/* Modal dark theme */
+.wallet-adapter-modal {
+  background: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(4px) !important;
+}
+.wallet-adapter-modal-wrapper {
+  font-family: var(--font-sans) !important;
+  background: var(--color-surface-raised) !important;
+  border: 1px solid var(--color-border-subtle) !important;
+  border-radius: 16px !important;
+}
+.wallet-adapter-modal-title {
+  color: var(--color-text-primary) !important;
+  font-family: var(--font-sans) !important;
+  font-weight: 600 !important;
+}
+.wallet-adapter-modal-button-close {
+  background: var(--color-surface-sunken) !important;
+}
+.wallet-adapter-modal-button-close svg {
+  fill: var(--color-text-tertiary) !important;
+}
+.wallet-adapter-modal-list .wallet-adapter-button {
+  background: transparent !important;
+  color: var(--color-text-primary) !important;
+  border-radius: 10px !important;
+  height: auto !important;
+}
+.wallet-adapter-modal-list .wallet-adapter-button:hover {
+  background: var(--color-surface-sunken) !important;
+  transform: none;
+}
+.wallet-adapter-modal-list-more {
+  color: var(--color-text-tertiary) !important;
+  cursor: pointer;
+}
+.wallet-adapter-modal-list-more:hover {
+  color: var(--color-text-secondary) !important;
+}
+.wallet-adapter-modal-list-more svg {
+  fill: var(--color-text-tertiary) !important;
+}
+
+/* Page enter animation */
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-page-enter {
+  animation: page-enter 0.35s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+/* Staggered children */
+.stagger-children > * {
+  animation: page-enter 0.4s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+.stagger-children > *:nth-child(1) { animation-delay: 0ms; }
+.stagger-children > *:nth-child(2) { animation-delay: 60ms; }
+.stagger-children > *:nth-child(3) { animation-delay: 120ms; }
+.stagger-children > *:nth-child(4) { animation-delay: 180ms; }
+.stagger-children > *:nth-child(5) { animation-delay: 240ms; }
+
+/* Subtle pulse for skeleton */
+@keyframes subtle-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
+}
+
+/* Landing page dot grid */
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Landing gradient text */
+.gradient-text {
+  background: linear-gradient(180deg, #ededf0 0%, #5b5b66 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Code window chrome dots */
+.code-chrome::before {
+  content: '';
+  display: flex;
+  gap: 6px;
+  padding-bottom: 16px;
+  background:
+    radial-gradient(circle at 8px 0, #ff5f57 4px, transparent 4px),
+    radial-gradient(circle at 22px 0, #febc2e 4px, transparent 4px),
+    radial-gradient(circle at 36px 0, #28c840 4px, transparent 4px);
+  background-repeat: no-repeat;
+  height: 8px;
+  width: 44px;
+}
+
+/* Glow ring for hero */
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
+}
+
+/* Scrollbar refinement */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a35;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a45;
+}
